@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{model\PYGZus{}id} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}openai/clip\PYGZhy{}vit\PYGZhy{}base\PYGZhy{}patch32\PYGZdq{}}
+\PYG{n}{processor} \PYG{o}{=} \PYG{n}{CLIPProcessor}\PYG{o}{.}\PYG{n}{from\PYGZus{}pretrained}\PYG{p}{(}\PYG{n}{model\PYGZus{}id}\PYG{p}{)}
+\PYG{n}{model} \PYG{o}{=} \PYG{n}{CLIPModel}\PYG{o}{.}\PYG{n}{from\PYGZus{}pretrained}\PYG{p}{(}\PYG{n}{model\PYGZus{}id}\PYG{p}{)}
+\PYG{n}{image} \PYG{o}{=} \PYG{n}{read\PYGZus{}image}\PYG{p}{(}\PYG{n}{image\PYGZus{}name}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}2.jpg\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{image} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{expand\PYGZus{}dims}\PYG{p}{(}\PYG{n}{image}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{labels} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}A photo of a piano\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}Someone playing the piano\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}A photo of a guitar\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}A photo of a piano in a white background\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}A very big dog eating hotdogs\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}A fluffy cat\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s+s2}{\PYGZdq{}A photo of the earth from the dark space\PYGZdq{}}\PYG{p}{]}
+
+\PYG{n}{labels} \PYG{o}{=} \PYG{n}{processor}\PYG{p}{(}
+\PYG{n}{text}\PYG{o}{=}\PYG{n}{labels}\PYG{p}{,}
+\PYG{n}{images}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,}
+\PYG{n}{padding}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,}
+\PYG{n}{return\PYGZus{}tensors}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}pt\PYGZdq{}}
+\PYG{p}{)}\PYG{o}{.}\PYG{n}{to}\PYG{p}{(}\PYG{n}{device}\PYG{p}{)}
+\PYG{n}{text\PYGZus{}emb} \PYG{o}{=} \PYG{n}{model}\PYG{o}{.}\PYG{n}{get\PYGZus{}text\PYGZus{}features}\PYG{p}{(}\PYG{o}{**}\PYG{n}{labels}\PYG{p}{)}
+\PYG{n}{text\PYGZus{}emb} \PYG{o}{=} \PYG{n}{text\PYGZus{}emb}\PYG{o}{.}\PYG{n}{detach}\PYG{p}{()}\PYG{o}{.}\PYG{n}{cpu}\PYG{p}{()}\PYG{o}{.}\PYG{n}{numpy}\PYG{p}{()}
+\PYG{n}{text\PYGZus{}emb} \PYG{o}{=} \PYG{n}{text\PYGZus{}emb} \PYG{o}{/} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linalg}\PYG{o}{.}\PYG{n}{norm}\PYG{p}{(}\PYG{n}{text\PYGZus{}emb}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{image} \PYG{o}{=} \PYG{n}{processor}\PYG{p}{(}
+\PYG{n}{text}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{,}
+\PYG{n}{images}\PYG{o}{=}\PYG{n}{image}\PYG{p}{,}
+\PYG{n}{return\PYGZus{}tensors}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}pt\PYGZdq{}}
+\PYG{p}{)[}\PYG{l+s+s2}{\PYGZdq{}pixel\PYGZus{}values\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{to}\PYG{p}{(}\PYG{n}{device}\PYG{p}{)}
+
+\PYG{n}{image\PYGZus{}emb} \PYG{o}{=} \PYG{n}{model}\PYG{o}{.}\PYG{n}{get\PYGZus{}image\PYGZus{}features}\PYG{p}{(}\PYG{n}{image}\PYG{p}{)}
+\PYG{n}{image\PYGZus{}emb} \PYG{o}{=} \PYG{n}{image\PYGZus{}emb}\PYG{o}{.}\PYG{n}{detach}\PYG{p}{()}\PYG{o}{.}\PYG{n}{cpu}\PYG{p}{()}\PYG{o}{.}\PYG{n}{numpy}\PYG{p}{()}
+\PYG{n}{similarities} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{dot}\PYG{p}{(}\PYG{n}{image\PYGZus{}emb}\PYG{p}{,} \PYG{n}{text\PYGZus{}emb}\PYG{o}{.}\PYG{n}{T}\PYG{p}{)}
+\PYG{n}{index} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argmax}\PYG{p}{(}\PYG{n}{similarities}\PYG{p}{,} \PYG{n}{axis}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{o}{.}\PYG{n}{item}\PYG{p}{()}
+\PYG{n}{result} \PYG{o}{=} \PYG{n}{labesl}\PYG{p}{[}\PYG{n}{index}\PYG{p}{]}
+\end{Verbatim}

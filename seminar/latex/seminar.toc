@@ -5,8 +5,26 @@
 \contentsline {subsection}{\numberline {2.1.1}Grundlagen des maschinellen Lernens}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Deep Learning und neuronale Netzwerke}{5}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}Kontrastives Lernen und CLIP}{7}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Analyse von CLIP und ähnlichen Modellen}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Fallstudien / Anwendungen}{7}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.2}Analyse von CLIP}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Architektur}{7}{subsection.2.2.1}%
+\contentsline {subsubsection}{\nonumberline Text-Encoder}{8}{subsubsection*.3}%
+\contentsline {subsubsection}{\nonumberline Bild-Encoder}{8}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.2.2}Integration und gemeinsamer Einbettungsraum}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Kontrastives Lernen im Detail}{9}{subsection.2.2.3}%
+\contentsline {subsubsection}{\nonumberline Vektoreinbettungen}{9}{subsubsection*.7}%
+\contentsline {subsubsection}{\nonumberline Ähnlichkeitsberechnung}{9}{subsubsection*.9}%
+\contentsline {subsubsection}{\nonumberline Training und kontrastiver Verlust}{9}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {2.2.4}Zero-Shot Learning in CLIP}{10}{subsection.2.2.4}%
+\contentsline {subsubsection}{\nonumberline Konzept}{10}{subsubsection*.13}%
+\contentsline {subsubsection}{\nonumberline Mechanismus}{10}{subsubsection*.15}%
+\contentsline {subsubsection}{\nonumberline Anwendungen}{10}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.2.5}Vergleichsanalyse}{11}{subsection.2.2.5}%
+\contentsline {subsubsection}{\nonumberline Traditionelle Vision-Modelle}{11}{subsubsection*.19}%
+\contentsline {subsubsection}{\nonumberline Multimodale Modelle}{12}{subsubsection*.21}%
+\contentsline {subsubsection}{\nonumberline Vorteile von CLIP}{12}{subsubsection*.23}%
+\contentsline {section}{\numberline {2.3}Fallstudien / Anwendungen}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{12}{section.2.5}%
+\contentsline {chapter}{\nonumberline Literatur}{13}{chapter*.24}%
+\contentsline {chapter}{\numberline {A}Anhang 1}{14}{appendix.A}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimport} \PYG{n}{torch}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimport} \PYG{n}{torchvision}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimport} \PYG{n}{torchvision}\PYG{o}{.}\PYG{n}{transforms} \PYG{k}{as} \PYG{n}{transforms}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Ifrom} \PYG{n}{transformers} \PYG{k+kn}{import} \PYG{n+nn}{CLIPProcessor}\PYG{o}{,} \PYG{n+nn}{CLIPModel}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimport} \PYG{n}{matplotlib}\PYG{o}{.}\PYG{n}{pyplot} \PYG{k}{as} \PYG{n}{plt}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Ifrom} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{utils}\PYG{o}{.}\PYG{n}{data} \PYG{k+kn}{import} \PYG{n+nn}{DataLoader}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Ifrom} \PYG{n}{datasets} \PYG{k+kn}{import} \PYG{n+nn}{load\PYGZus{}dataset}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimport} \PYG{n}{numpy} \PYG{k}{as} \PYG{n}{np}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iimagenette} \PYG{o}{=} \PYG{n}{load\PYGZus{}dataset}\PYG{p}{(}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{l+s+s2}{\PYGZdq{}frgfm/imagenette\PYGZdq{}}\PYG{p}{,}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{l+s+s2}{\PYGZdq{}320px\PYGZdq{}}\PYG{p}{,}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Isplit}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}validation\PYGZdq{}}\PYG{p}{,}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Irevision}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}4d512db\PYGZdq{}}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}\PYG{p}{)}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{I}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Ilabels} \PYG{o}{=} \PYG{n}{imagenette}\PYG{o}{.}\PYG{n}{info}\PYG{o}{.}\PYG{n}{features}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}label\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{names}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iclip\PYGZus{}labels} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}A photo of }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{x}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{labels}\PYG{p}{]}
+\PYG{o}{\PYGZca{}\PYGZca{}}\PYG{n}{Iclip\PYGZus{}labels}
+\end{Verbatim}

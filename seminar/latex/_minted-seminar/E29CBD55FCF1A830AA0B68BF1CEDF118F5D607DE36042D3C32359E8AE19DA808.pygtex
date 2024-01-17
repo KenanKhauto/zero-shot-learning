@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{torch}
+\PYG{k+kn}{import} \PYG{n+nn}{torchvision}
+\PYG{k+kn}{import} \PYG{n+nn}{torchvision.transforms} \PYG{k}{as} \PYG{n+nn}{transforms}
+\PYG{k+kn}{from} \PYG{n+nn}{transformers} \PYG{k+kn}{import} \PYG{n}{CLIPProcessor}\PYG{p}{,} \PYG{n}{CLIPModel}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{torch.utils.data} \PYG{k+kn}{import} \PYG{n}{DataLoader}
+\PYG{k+kn}{from} \PYG{n+nn}{datasets} \PYG{k+kn}{import} \PYG{n}{load\PYGZus{}dataset}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+
+\PYG{n}{imagenette} \PYG{o}{=} \PYG{n}{load\PYGZus{}dataset}\PYG{p}{(}
+    \PYG{l+s+s2}{\PYGZdq{}frgfm/imagenette\PYGZdq{}}\PYG{p}{,}
+    \PYG{l+s+s2}{\PYGZdq{}320px\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{split}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}validation\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{revision}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}4d512db\PYGZdq{}}
+\PYG{p}{)}
+
+\PYG{n}{labels} \PYG{o}{=} \PYG{n}{imagenette}\PYG{o}{.}\PYG{n}{info}\PYG{o}{.}\PYG{n}{features}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}label\PYGZdq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{names}
+\PYG{n}{clip\PYGZus{}labels} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}A photo of }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{x}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{labels}\PYG{p}{]}
+\PYG{n}{clip\PYGZus{}labels}
+\end{Verbatim}
