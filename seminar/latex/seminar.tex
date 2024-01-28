@@ -13,7 +13,7 @@
 % - nolibertine
 \usepackage{libertine}
 \usepackage{biblatex}
-\usepackage{listings}
+%\usepackage{listings}
 %\usepackage{natbib}
 \usepackage{hyperref}
 \hypersetup{
@@ -98,7 +98,7 @@ Deep Learning, eine Unterklasse des maschinellen Lernens, basiert auf künstlich
 	\label{fig:2.1}
 \end{figure}
 
-\textbf{Convolutional Neural Networks (CNNs):} Speziell für die Bildverarbeitung sind CNNs von entscheidender Bedeutung. Sie sind darauf ausgelegt, hierarchische Muster in Bildern zu erkennen, was sie ideal für Aufgaben wie Bildklassifikation und Objekterkennung macht.
+\textbf{Convolutional Neural Networks (CNNs):} Speziell für die Bildverarbeitung (wie in \cite{oshea2015introduction} gezeigt wurde) sind CNNs von entscheidender Bedeutung. Sie sind darauf ausgelegt, hierarchische Muster in Bildern zu erkennen, was sie ideal für Aufgaben wie Bildklassifikation und Objekterkennung macht.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{static/cnn.jpeg}
@@ -128,7 +128,7 @@ Das Modell besteht aus zwei Hauptkomponenten: einem Text-Encoder und einem Bild-
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{static/CLIP.png}
-	\caption{CLIP, Bild von (\cite{radford2021learning})}
+	\caption{CLIP, Bild von \textcite{radford2021learning}}
 	\label{fig:2.4}
 \end{figure}
 \subsubsection{Text-Encoder}
@@ -145,7 +145,7 @@ eine Darstellung des Bildes zu erzeugen, die in demselben Vektorraum wie der Tex
 um eine direkte Vergleichbarkeit und Verknüpfung von Text und Bild zu ermöglichen.
 
 Für Leser, die sich tiefergehend mit der Theorie und Anwendung von Transformern beschäftigen möchten, 
-empfehle ich die grundlegenden Papers (\cite{vaswani2017attention}) und (\cite{dosovitskiy2020image}).
+empfehle ich die grundlegenden Papers \textcite{vaswani2017attention} und \textcite{dosovitskiy2020image}.
 Diese zwei Werke bieten eine umfassende Einführung in das Konzept der Transformer und ViTs und legt 
 den Grundstein für viele moderne Ansätze in der Verarbeitung natürlicher Sprache und Bilderkennung.
 
@@ -192,10 +192,19 @@ Hierbei ist:
  \item \(\textbf{v}_{T_k}\)die Embedings der negativen Beispiele (nicht korrespondierende Bilder),
 \end{itemize}
 
-Diese Formel zielt darauf ab, die Wahrscheinlichkeit zu maximieren, dass das korrekte Bild-Text-Paar unter Berücksichtigung aller anderen Paare im Batch als das ähnlichste Paar ausgewählt wird. Der Logarithmus im Zähler bewirkt, dass das korrekte Paar einen hohen Beitrag zum Gesamtverlust leistet, wenn es nicht als ähnlichstes Paar identifiziert wird. Im Nenner summiert sich der Beitrag aller Paare im Batch, was die Unterscheidung zwischen korrekten und inkorrekten Paaren fördert.
+Diese Formel zielt darauf ab, die Wahrscheinlichkeit zu maximieren, dass das korrekte Bild-Text-Paar unter 
+Berücksichtigung aller anderen Paare im Batch als das ähnlichste Paar ausgewählt wird. Der Logarithmus im 
+Zähler bewirkt, dass das korrekte Paar einen hohen Beitrag zum Gesamtverlust leistet, wenn es nicht als ähnlichstes 
+Paar identifiziert wird. Im Nenner summiert sich der Beitrag aller Paare im Batch, was die Unterscheidung zwischen 
+korrekten und inkorrekten Paaren fördert.
 
 \subsection{Zero-Shot Learning in CLIP}
 \subsubsection{Konzept}
+Zero-shot bedeutet die Anwendung eines Modells ohne die Notwendigkeit des Feintunings. 
+Das bedeutet, dass wir ein multimodales Modell nehmen und es verwenden, um Bilder in einem 
+bestimmten Bereich zu detektieren, und dann zu einem vollständig anderen Bereich wechseln, 
+ohne dass das Modell auch nur ein einziges Trainingsbeispiel aus dem neuen Bereich gesehen hat.
+
 Zero-Shot Learning bezieht sich auf die Fähigkeit des Modells,
 Aufgaben zu verstehen und durchzuführen, für die es nicht 
 explizit trainiert wurde. Im Kontext von CLIP bedeutet dies, 
@@ -208,12 +217,18 @@ erreicht. Durch das Training mit einem vielfältigen Datensatz lernt CLIP eine b
 Palette von visuellen Stilen, Objekten und Konzepten, was ihm eine gute Generalisierung 
 auf neue, ungesehene Aufgaben ermöglicht.
 
-\subsubsection{Anwendungen}
+\subsubsection{Beispiel Code für Image Classification}
 Diese Eigenschaft macht CLIP außerordentlich vielseitig. Es kann für verschiedene 
 Aufgaben wie Objekterkennung, Inhaltsmoderation und sogar kreative Anwendungen wie 
 das Generieren von Bildern aus Textbeschreibungen verwendet werden.
 
+Im Folgenden werden ich einen Beispiel Code von \textcite{pinecone2023zeroshot} zeigen, wie man mit CLIP Image Classification machen kann.
+Dafür brauchen wir das Modell von OpenAI. Und dann noch den CLIP-Processor.
+Der Processor ist dafür zuständig, die Labels und Images in eine passende Form für CLIP umzuwandeln.
+
 \begin{minted}[frame=lines, framesep=2mm, baselinestretch=1.2, fontsize=\footnotesize]{python}
+
+from transformers import CLIPProcessor, CLIPModel
 model_id = "openai/clip-vit-base-patch32"
 processor = CLIPProcessor.from_pretrained(model_id)
 model = CLIPModel.from_pretrained(model_id)
@@ -256,7 +271,6 @@ index = np.argmax(similarities, axis=1).item()
 result = labesl[index]
 \end{minted}
 
-Im obigen Codestück sieht man grob, wie man CLIP für image Classification ohne fine-tuning nutzen kann.
 Der komplette Code findet man auf \url{https://github.com/KenanKhauto/zero-shot-learning}.
 Die Labels habe ich selber manuell erstellt.
 Und das Bild, was ich als Eingabe benutzt habe, ist ein Klavier mit einem weißen Hintergrund. Und die Ausgabe des Models ist auch diese Beschreibung.
@@ -268,6 +282,31 @@ CLIP machen kann.
 
 \subsubsection{Traditionelle Vision-Modelle}
 Frühere Modelle in der Computer Vision waren in der Regel aufgabenspezifisch (z.B. Modelle zur Objekterkennung, Bildsegmentierung) und erforderten umfangreiche Feinabstimmungen mit beschrifteten Daten für jede Aufgabe.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{static/resnet_vs_clip.png}
+	\caption{Resnet-101 fine-tuned on ImageNet vs. zero-shot CLIP, Bild von \textcite{radford2021learning}}
+	\label{fig:2.5}
+\end{figure}
+
+In diesem Vergleich (\ref{fig:2.5}) können wir sehen, dass trotz des Trainings von ResNet-101 für ImageNet seine Performanz bei 
+ähnlichen Datensätzen viel schlechter ist als die von CLIP bei denselben Aufgaben. CLIP übertrifft ein SotA-Modell, 
+das für ImageNet trainiert wurde, bei leicht modifizierten ImageNet-Aufgaben.
+
+Wenn ein ResNet-Modell auf andere Domänen angewendet wird, ist ein Standardansatz die Verwendung einer „linear probe“. 
+Dabei werden die gelernten Merkmale von ResNet (aus den letzten paar Layers) in einen linearen Classifier eingespeist, 
+der dann für einen spezifischen Datensatz fine-tuned wird. Dies würde man als Few- bis Many-Shot-Learning bezeichnen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{static/clip_vs_resnet50.png}
+	\caption{Linear Probe on ResNet50 vs. zero-shot CLIP, Figur von \textcite{radford2021learning}}
+	\label{fig:2.6}
+\end{figure}
+
+
+In \ref{fig:2.6} \parencite[vgl.][]{radford2021learning} wurde das linear probe von ResNet-50 mit dem Zero-Shot-CLIP verglichen. 
+In einem Szenario übertrifft Zero-Shot-CLIP das linear probe bei vielen Aufgaben.
 
 \subsubsection{Multimodale Modelle}
 Andere zeitgenössische Modelle wie Googles BERT und OpenAIs GPT-3 haben fortgeschrittene 
@@ -275,40 +314,39 @@ Fähigkeiten in ihren jeweiligen Bereichen (Text- und Sprachverarbeitung), sind 
 inhärent darauf ausgelegt, die Beziehung zwischen Text und Bildern zu verstehen, 
 wie es bei CLIP der Fall ist.
 
-\subsubsection{Vorteile von CLIP}
-CLIPs Fähigkeit, textuelle und visuelle Informationen zu verstehen und zu verknüpfen, 
-ohne aufgabenspezifisches Training, hebt es ab. Seine Fähigkeiten zum Zero-Shot Learning 
-reduzieren deutlich den Bedarf an großen annotierten Datensätzen für neue Aufgaben.
-
 \section{Fallstudien / Anwendungen}
 \label{sec:Fallstudien-Anwendung}
-Hier erwähnen wo und wie CLIP in image understanding paper benutzt wurde.
+\subsection{Object Detection mithilfe von CLIP}
+Die Zero-Shot-Objekterkennung bezieht sich auf die Fähigkeit eines Modells, Objekte in Bildern zu erkennen und zu lokalisieren, 
+ohne auf spezifische Beispiele aus dem jeweiligen Bereich trainiert worden zu sein. \parencite{pinecone_clip}
+\subsubsection{Grundlagen}
+\begin{itemize}
+	\item Die Zuordnung einer kategorischen Bezeichnung zu einem Bild.
+	\item Identifizierung der Koordinaten eines Objekts im Bild, oft durch ein begrenzendes Rechteck (Bounding Box).
+	\item Lokalisierung und Klassifizierung mehrerer Objekte in einem Bild.
+\end{itemize}
+
+\subsubsection{Object Localization mit CLIP}
+\begin{itemize}
+	\item Bilder werden in kleine Patches unterteilt.
+	\item Jeder Patch wird mit einem Klassenlabel (z.B. "An electric violin") verglichen, um die Ähnlichkeit zu bewerten.
+	\item Durch Aggregation dieser Bewertungen über alle Patches hinweg wird eine Karte der Objektstandorte erstellt.
+\end{itemize}
+
+\subsubsection{Object Detection mit CLIP}
+\begin{itemize}
+	\item Ähnlich wie bei der Objektlokalisierung, aber es werden mehrere Objekte und Klassen gleichzeitig identifiziert.
+	\item Nutzung von Bounding Boxes zur Darstellung der erkannten Objekte.
+\end{itemize}
+
+\subsubsection{Anwendungsbeispiel}
+
+Hier Code zeigen
+
 \section{Diskussion von Herausforderungen und Grenzen}
 \section{Zukünftige Richtungen und mögliche Verbesserungen}
-Füge Attention is all you need und Vits papers als Quellen fürs Verstehen, wie Transformer genau funktionieren.
+
 \printbibliography
 \appendix
 \chapter{Anhang 1}
-	\begin{minted}{python}
-		import torch
-		import torchvision
-		import torchvision.transforms as transforms
-		from transformers import CLIPProcessor, CLIPModel
-		import matplotlib.pyplot as plt
-		from torch.utils.data import DataLoader
-		from datasets import load_dataset
-		import numpy as np
-		
-		imagenette = load_dataset(
-			"frgfm/imagenette",
-			"320px",
-			split="validation",
-			revision="4d512db"
-		)
-		
-		labels = imagenette.info.features["label"].names
-		clip_labels = [f"A photo of {x}" for x in labels]
-		clip_labels
-	\end{minted}
-
 \end{document}

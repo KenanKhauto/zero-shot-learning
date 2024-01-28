@@ -100,6 +100,95 @@
       \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
       \field{year}{2020}
     \endentry
+    \entry{oshea2015introduction}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f92af5765968c6de4c1e42d397224c9c}{%
+           family={O'Shea},
+           familyi={O\bibinitperiod},
+           given={Keiron},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5da23fc726b6d32ee9a3247fa6663fc}{%
+           family={Nash},
+           familyi={N\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{fullhash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{bibnamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authorbibnamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authornamehash}{1e0b31097f3d41e61dd78e46b147642a}
+      \strng{authorfullhash}{1e0b31097f3d41e61dd78e46b147642a}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1511.08458}
+      \field{title}{An Introduction to Convolutional Neural Networks}
+      \field{year}{2015}
+    \endentry
+    \entry{pinecone_clip}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6af38c920e468b8adbdd5793a09b4ca}{%
+           family={{Pinecone}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{fullhash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{bibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authorbibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authornamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authorfullhash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on: 2024-01-22}
+      \field{title}{{Zero Shot Object Detection with OpenAI's CLIP}}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-object-detection-clip/
+      \endverb
+      \verb{url}
+      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-object-detection-clip/
+      \endverb
+    \endentry
+    \entry{pinecone2023zeroshot}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6af38c920e468b8adbdd5793a09b4ca}{%
+           family={{Pinecone}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{fullhash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{bibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authorbibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authornamehash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \strng{authorfullhash}{f6af38c920e468b8adbdd5793a09b4ca}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed on: 2024-01-22}
+      \field{title}{Zero-shot Image Classification with OpenAI's CLIP}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-image-classification-clip/
+      \endverb
+      \verb{url}
+      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-image-classification-clip/
+      \endverb
+    \endentry
     \entry{radford2021learning}{misc}{}
       \name{author}{12}{}{%
         {{un=0,uniquepart=base,hash=a812c46caad94fc8701be37871f303ba}{%

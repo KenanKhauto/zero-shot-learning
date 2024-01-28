@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'seminar.blg'
-[83] biber-MSWIN64:340> INFO - === 
-[116] Biber.pm:419> INFO - Reading 'seminar.bcf'
-[198] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[208] Biber.pm:4419> INFO - Processing section 0
-[218] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
-[262] bibtex.pm:1713> INFO - LaTeX decoding ...
-[268] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
-[318] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[318] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[318] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
-[318] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[321] bbl.pm:660> INFO - Writing 'seminar.bbl' with encoding 'UTF-8'
-[327] bbl.pm:763> INFO - Output to seminar.bbl
+[88] biber-MSWIN64:340> INFO - === 
+[122] Biber.pm:419> INFO - Reading 'seminar.bcf'
+[214] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[226] Biber.pm:4419> INFO - Processing section 0
+[235] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
+[291] bibtex.pm:1713> INFO - LaTeX decoding ...
+[302] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[361] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[361] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[361] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[361] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[370] bbl.pm:660> INFO - Writing 'seminar.bbl' with encoding 'UTF-8'
+[376] bbl.pm:763> INFO - Output to seminar.bbl

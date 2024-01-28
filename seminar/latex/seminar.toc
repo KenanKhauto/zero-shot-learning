@@ -17,14 +17,18 @@
 \contentsline {subsection}{\numberline {2.2.4}Zero-Shot Learning in CLIP}{10}{subsection.2.2.4}%
 \contentsline {subsubsection}{\nonumberline Konzept}{10}{subsubsection*.13}%
 \contentsline {subsubsection}{\nonumberline Mechanismus}{10}{subsubsection*.15}%
-\contentsline {subsubsection}{\nonumberline Anwendungen}{10}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {2.2.5}Vergleichsanalyse}{11}{subsection.2.2.5}%
-\contentsline {subsubsection}{\nonumberline Traditionelle Vision-Modelle}{11}{subsubsection*.19}%
+\contentsline {subsubsection}{\nonumberline Beispiel Code für Image Classification}{10}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.2.5}Vergleichsanalyse}{12}{subsection.2.2.5}%
+\contentsline {subsubsection}{\nonumberline Traditionelle Vision-Modelle}{12}{subsubsection*.19}%
 \contentsline {subsubsection}{\nonumberline Multimodale Modelle}{12}{subsubsection*.21}%
-\contentsline {subsubsection}{\nonumberline Vorteile von CLIP}{12}{subsubsection*.23}%
-\contentsline {section}{\numberline {2.3}Fallstudien / Anwendungen}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{12}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{12}{section.2.5}%
-\contentsline {chapter}{\nonumberline Literatur}{13}{chapter*.24}%
-\contentsline {chapter}{\numberline {A}Anhang 1}{14}{appendix.A}%
+\contentsline {section}{\numberline {2.3}Fallstudien / Anwendungen}{13}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Object Detection mithilfe von CLIP}{13}{subsection.2.3.1}%
+\contentsline {subsubsection}{\nonumberline Grundlagen}{13}{subsubsection*.23}%
+\contentsline {subsubsection}{\nonumberline Object Localization mit CLIP}{13}{subsubsection*.25}%
+\contentsline {subsubsection}{\nonumberline Object Detection mit CLIP}{14}{subsubsection*.27}%
+\contentsline {subsubsection}{\nonumberline Anwendungsbeispiel}{14}{subsubsection*.29}%
+\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{14}{section.2.5}%
+\contentsline {chapter}{\nonumberline Literatur}{15}{chapter*.30}%
+\contentsline {chapter}{\numberline {A}Anhang 1}{16}{appendix.A}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

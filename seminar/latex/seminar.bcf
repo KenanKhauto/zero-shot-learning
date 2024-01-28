@@ -2362,10 +2362,18 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">oshea2015introduction</bcf:citekey>
     <bcf:citekey order="2" intorder="1">radford2021learning</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">vaswani2017attention</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">dosovitskiy2020image</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">pinecone2023zeroshot</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">radford2021learning</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">pinecone_clip</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
