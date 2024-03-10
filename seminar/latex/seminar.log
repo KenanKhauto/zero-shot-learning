@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.11.26)  28 JAN 2024 13:30
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.10.12) (preloaded format=xelatex 2023.11.26)  10 MAR 2024 16:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1575,28 +1575,28 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count482
 ))
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 49.
+(Font)              scaled to size 12.0pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 49.
+(Font)              scaled to size 17.28pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 49.
+(Font)              scaled to size 12.0pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 49.
+(Font)              scaled to size 12.0pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 49.
+(Font)              scaled to size 24.88pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 49.
+(Font)              scaled to size 14.4pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 49.
+(Font)              scaled to size 17.28pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+(Font)              scaled to size 10.0pt on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1607,9 +1607,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `TU/LinBiolinum(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 49.
+(Font)              scaled to size 17.28pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 49.
+(Font)              scaled to size 14.4pt on input line 48.
  [2
 
 ] (seminar.toc
@@ -1652,13 +1652,13 @@ File: static/FCnetwork.png Graphic file (type bmp)
 File: static/cnn.jpeg Graphic file (type bmp)
 <static/cnn.jpeg>
 
-Underfull \hbox (badness 3199) in paragraph at lines 105--105
+Underfull \hbox (badness 4391) in paragraph at lines 104--104
 [][][]\TU/LinLibertine(0)/m/n/12 Convolutional neural network (CNN), see [][]$[
 ][][][][] [] [] [] [][][][][][][][][][][][][][] [] [][][] []
  []
 
 
-Overfull \hbox (8.80406pt too wide) in paragraph at lines 101--108
+Overfull \hbox (8.80406pt too wide) in paragraph at lines 100--107
 []\TU/LinLibertine(0)/b/n/12 Convolutional Neural Networks (CNNs): \TU/LinLiber
 tine(0)/m/n/12 Speziell für die Bildverarbeitung (wie in []O’Shea
  []
@@ -1672,15 +1672,18 @@ File: static/transformer.png Graphic file (type bmp)
 File: static/CLIP.png Graphic file (type bmp)
 <static/CLIP.png>
 
-Overfull \hbox (11.08408pt too wide) in paragraph at lines 127--134
+Overfull \hbox (11.08408pt too wide) in paragraph at lines 126--133
 \TU/LinLibertine(0)/m/n/12 Das Modell besteht aus zwei Hauptkomponenten: einem 
 Text-Encoder und einem Bild-Encoder.
  []
 
 [7]
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/it' will be
-(Font)              scaled to size 12.0pt on input line 156.
+File: static/attention.png Graphic file (type bmp)
+<static/attention.png>
  [8] [9]
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/it' will be
+(Font)              scaled to size 12.0pt on input line 232.
+ [10] [11]
 \openout4 = `seminar.pyg'.
 
  (_minted-seminar/default.pygstyle)
@@ -1690,29 +1693,52 @@ LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 1.
 LaTeX Font Info:    Font shape `TU/LinLibertine(5)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 3.
- [10])
+ [12])
 File: static/resnet_vs_clip.png Graphic file (type bmp)
 <static/resnet_vs_clip.png>
- [11]
+ [13]
 File: static/clip_vs_resnet50.png Graphic file (type bmp)
 <static/clip_vs_resnet50.png>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] [13] [14]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] [15]
+File: static/fcity.png Graphic file (type bmp)
+<static/fcity.png>
+File: static/fcity_barock.png Graphic file (type bmp)
+<static/fcity_barock.png>
+ [16] [17] [18]
+Overfull \hbox (0.17706pt too wide) in paragraph at lines 538--540
+\TU/LinLibertine(0)/m/n/12 Die Entwicklung von Richtlinien und regulatorischen 
+Rahmenbedingungen wird eine Schlüs-
+ []
+
+
+Overfull \hbox (1.33005pt too wide) in paragraph at lines 546--548
+\TU/LinLibertine(0)/m/n/12 Schließlich besteht ein stetiges Interesse daran, di
+e Zero-Shot-Learning-Fähigkeiten von CLIP
+ []
+
+[19] [20]
 chapter without number
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 349.
-LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 349.
-LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 349.
-[15
+(Font)              scaled to size 12.0pt on input line 554.
 
-]
-chapter A.
-[16
+Overfull \hbox (3.49997pt too wide) in paragraph at lines 555--555
+[][]\TU/LinLibertine(0)/m/n/12 LeCun, Yann, Yoshua Bengio und Geoffrey Hinton (
+2015). „  Deep learning“. In: \TU/LinLibertine(0)/m/it/12 Nature \TU/LinLiberti
+ne(0)/m/n/12 521.7553,
+ []
+
+LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 554.
+LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 554.
+[21
 
 ] (seminar.aux)
  ***********
@@ -1728,12 +1754,12 @@ Package logreq Info: Writing requests to 'seminar.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39466 strings out of 409718
- 806131 string characters out of 5780222
- 1930189 words of memory out of 5000000
- 61044 multiletter control sequences out of 15000+600000
+ 39516 strings out of 409718
+ 807118 string characters out of 5780222
+ 1933189 words of memory out of 5000000
+ 61091 multiletter control sequences out of 15000+600000
  566030 words of font info for 117 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 122i,11n,121p,10927b,5132s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,13n,121p,10927b,5391s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on seminar.pdf (16 pages).
+Output written on seminar.pdf (21 pages).

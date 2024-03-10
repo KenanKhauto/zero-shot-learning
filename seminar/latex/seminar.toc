@@ -8,27 +8,40 @@
 \contentsline {section}{\numberline {2.2}Analyse von CLIP}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Architektur}{7}{subsection.2.2.1}%
 \contentsline {subsubsection}{\nonumberline Text-Encoder}{8}{subsubsection*.3}%
-\contentsline {subsubsection}{\nonumberline Bild-Encoder}{8}{subsubsection*.5}%
-\contentsline {subsection}{\numberline {2.2.2}Integration und gemeinsamer Einbettungsraum}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Kontrastives Lernen im Detail}{9}{subsection.2.2.3}%
-\contentsline {subsubsection}{\nonumberline Vektoreinbettungen}{9}{subsubsection*.7}%
-\contentsline {subsubsection}{\nonumberline Ähnlichkeitsberechnung}{9}{subsubsection*.9}%
-\contentsline {subsubsection}{\nonumberline Training und kontrastiver Verlust}{9}{subsubsection*.11}%
-\contentsline {subsection}{\numberline {2.2.4}Zero-Shot Learning in CLIP}{10}{subsection.2.2.4}%
-\contentsline {subsubsection}{\nonumberline Konzept}{10}{subsubsection*.13}%
-\contentsline {subsubsection}{\nonumberline Mechanismus}{10}{subsubsection*.15}%
-\contentsline {subsubsection}{\nonumberline Beispiel Code für Image Classification}{10}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {2.2.5}Vergleichsanalyse}{12}{subsection.2.2.5}%
-\contentsline {subsubsection}{\nonumberline Traditionelle Vision-Modelle}{12}{subsubsection*.19}%
-\contentsline {subsubsection}{\nonumberline Multimodale Modelle}{12}{subsubsection*.21}%
-\contentsline {section}{\numberline {2.3}Fallstudien / Anwendungen}{13}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Object Detection mithilfe von CLIP}{13}{subsection.2.3.1}%
-\contentsline {subsubsection}{\nonumberline Grundlagen}{13}{subsubsection*.23}%
-\contentsline {subsubsection}{\nonumberline Object Localization mit CLIP}{13}{subsubsection*.25}%
-\contentsline {subsubsection}{\nonumberline Object Detection mit CLIP}{14}{subsubsection*.27}%
-\contentsline {subsubsection}{\nonumberline Anwendungsbeispiel}{14}{subsubsection*.29}%
-\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{14}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{14}{section.2.5}%
-\contentsline {chapter}{\nonumberline Literatur}{15}{chapter*.30}%
-\contentsline {chapter}{\numberline {A}Anhang 1}{16}{appendix.A}%
+\contentsline {subsubsection}{\nonumberline Bild-Encoder}{9}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.2.2}Integration und gemeinsamer Einbettungsraum}{10}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Kontrastives Lernen im Detail}{10}{subsection.2.2.3}%
+\contentsline {subsubsection}{\nonumberline Vektoreinbettungen}{11}{subsubsection*.7}%
+\contentsline {subsubsection}{\nonumberline Ähnlichkeitsberechnung}{11}{subsubsection*.9}%
+\contentsline {subsubsection}{\nonumberline Training und kontrastiver Verlust}{11}{subsubsection*.11}%
+\contentsline {subsubsection}{\nonumberline Gesamtverlust}{11}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {2.2.4}Zero-Shot Learning in CLIP}{12}{subsection.2.2.4}%
+\contentsline {subsubsection}{\nonumberline Konzept}{12}{subsubsection*.15}%
+\contentsline {subsubsection}{\nonumberline Mechanismus}{12}{subsubsection*.17}%
+\contentsline {subsubsection}{\nonumberline Beispiel Code für Image Classification}{12}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {2.2.5}Vergleichsanalyse}{14}{subsection.2.2.5}%
+\contentsline {subsubsection}{\nonumberline Traditionelle Vision-Modelle}{14}{subsubsection*.21}%
+\contentsline {section}{\numberline {2.3}Anwendungen}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Zero-Shot-Classifier auf CIFAR10}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Bild- und Textsuche}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Automatische Bildbeschriftung}{16}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Sentiment-Analysis in Bildern}{16}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Bildgeneration mit Text Prompts}{16}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Diskussion von Herausforderungen und Grenzen}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Datensatz- und Verzerrungsprobleme}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Generalisierbarkeit und Übertragbarkeit}{17}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Interpretierbarkeit und Erklärbarkeit}{17}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Rechen- und Umweltbedenken}{18}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Ethische und soziale Auswirkungen}{18}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Missbrauchspotential}{18}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Grenzen der Zero-Shot-Kapazitäten}{18}{subsection.2.4.7}%
+\contentsline {section}{\numberline {2.5}Zukünftige Richtungen und mögliche Verbesserungen}{18}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Erweiterte Datensätze und Fairness}{18}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Verbesserte Generalisierung und Adaption}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Erhöhte Transparenz und Erklärbarkeit}{19}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Umweltfreundlichere KI}{19}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Ethische Richtlinien und Regulation}{19}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Bekämpfung von Missbrauch}{19}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}Fortschritt der Zero-Shot-Technologien}{19}{subsection.2.5.7}%
+\contentsline {chapter}{\nonumberline Literatur}{21}{chapter*.22}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

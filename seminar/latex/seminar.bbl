@@ -100,6 +100,89 @@
       \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
       \field{year}{2020}
     \endentry
+    \entry{krizhevsky2012imagenet}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{fullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{bibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authornamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in neural information processing systems}
+      \field{title}{ImageNet classification with deep convolutional neural networks}
+      \field{year}{2012}
+      \field{pages}{1097\bibrangedash 1105}
+      \range{pages}{9}
+    \endentry
+    \entry{lecun2015deep}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=9a8750ccdb2a4cf14d2655face1ce016}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{fullhash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{bibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7553}
+      \field{title}{Deep learning}
+      \field{volume}{521}
+      \field{year}{2015}
+      \field{pages}{436\bibrangedash 444}
+      \range{pages}{9}
+    \endentry
     \entry{oshea2015introduction}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=f92af5765968c6de4c1e42d397224c9c}{%
@@ -131,35 +214,6 @@
       \field{title}{An Introduction to Convolutional Neural Networks}
       \field{year}{2015}
     \endentry
-    \entry{pinecone_clip}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f6af38c920e468b8adbdd5793a09b4ca}{%
-           family={{Pinecone}},
-           familyi={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \strng{fullhash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \strng{bibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \strng{authorbibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \strng{authornamehash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \strng{authorfullhash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \field{extraname}{1}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed on: 2024-01-22}
-      \field{title}{{Zero Shot Object Detection with OpenAI's CLIP}}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-object-detection-clip/
-      \endverb
-      \verb{url}
-      \verb https://www.pinecone.io/learn/series/image-search/zero-shot-object-detection-clip/
-      \endverb
-    \endentry
     \entry{pinecone2023zeroshot}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=f6af38c920e468b8adbdd5793a09b4ca}{%
@@ -172,7 +226,6 @@
       \strng{authorbibnamehash}{f6af38c920e468b8adbdd5793a09b4ca}
       \strng{authornamehash}{f6af38c920e468b8adbdd5793a09b4ca}
       \strng{authorfullhash}{f6af38c920e468b8adbdd5793a09b4ca}
-      \field{extraname}{2}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
